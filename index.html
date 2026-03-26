@@ -24,10 +24,11 @@
             text-align: center;
             border-bottom: 4px solid var(--verde-principal);
         }
-        .logo-container {
-            width: 80px;
-            height: 80px;
+       .logo-container {
+            width: 150px; /* Tamaño sugerido para el nuevo logo */
             margin: 0 auto 1rem;
+            display: flex; /* Asegura que se centre bien */
+            justify-content: center;
         }
         h1 { color: var(--verde-principal); margin: 0; }
         .tagline { font-style: italic; color: #666; }
@@ -69,11 +70,8 @@
 <body>
 
 <header>
-    <div class="logo-container">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="30" r="15" fill="#fbc02d" />
-            <path d="M50 90 V60 M50 70 Q70 50 80 70 M50 75 Q30 55 20 75" stroke="#2d5a27" stroke-width="5" fill="none" stroke-linecap="round"/>
-        </svg>
+<div class="logo-container">
+        <img src="https://i.imgur.com/uFdQktK.webp" alt="Logo Sembrando Ambiente" style="width: 100%; height: auto; display: block; margin: 0 auto;">
     </div>
     <h1>Sembrando Ambiente</h1>
     <p class="tagline">Capacitación, asesoramiento y acompañamiento ambiental</p>
