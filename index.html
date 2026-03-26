@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sembrando Ambiente | Educación y Consultoría Ambiental</title>
+    <style>
+        :root {
+            --verde-principal: #2d5a27;
+            --verde-claro: #eef5ee;
+            --amarillo-sol: #fbc02d;
+            --texto: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--texto);
+            background-color: #fff;
+        }
+        header {
+            background-color: var(--verde-claro);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--verde-principal);
+        }
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+        }
+        h1 { color: var(--verde-principal); margin: 0; }
+        .tagline { font-style: italic; color: #666; }
+        
+        nav {
+            background: var(--verde-principal);
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+        nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem; }
+
+        .container { max-width: 900px; margin: auto; padding: 2rem 1rem; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .card { 
+            background: var(--verde-claro); 
+            padding: 1.5rem; 
+            border-radius: 10px; 
+            border-left: 5px solid var(--verde-principal);
+        }
+        
+        .ejes { background: #f9f9f9; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+        .ejes h3 { color: var(--verde-principal); border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; }
+
+        footer { 
+            background: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 2rem 1rem; 
+            margin-top: 3rem;
+        }
+        .contact-info a { color: var(--amarillo-sol); text-decoration: none; }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="30" r="15" fill="#fbc02d" />
+            <path d="M50 90 V60 M50 70 Q70 50 80 70 M50 75 Q30 55 20 75" stroke="#2d5a27" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <h1>Sembrando Ambiente</h1>
+    <p class="tagline">Capacitación, asesoramiento y acompañamiento ambiental</p>
+</header>
+
+<nav>
+    <a href="#propuesta">Propuesta</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+    <section id="propuesta">
+        <h2>Nuestra Misión</h2>
+        <p>Somos un equipo interdisciplinario dedicado a <strong>ambientalizar las instituciones</strong>. Trabajamos para integrar la sustentabilidad en el ADN de las organizaciones, transformando el currículum escolar y la cultura corporativa.</p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Para Escuelas</h3>
+            <p>Acompañamos la actualización pedagógica hacia una educación ambiental crítica y transversal en todos los niveles.</p>
+        </div>
+        <div class="card">
+            <h3>Para Empresas</h3>
+            <p>Consultoría técnica para mejorar la eficiencia, reducir el impacto ambiental y cumplir con normativas vigentes.</p>
+        </div>
+    </div>
+
+    <section id="servicios" class="ejes">
+        <h3>Ejes de Trabajo</h3>
+        <ul>
+            <li><strong>Biodiversidad:</strong> Valorización de flora y fauna nativa.</li>
+            <li><strong>Gestión de Residuos:</strong> Implementación de economía circular y compostaje.</li>
+            <li><strong>Eficiencia Energética:</strong> Diagnóstico y optimización de recursos.</li>
+            <li><strong>Huella de Carbono:</strong> Medición y planes de mitigación.</li>
+        </ul>
+    </section>
+</div>
+
+<footer id="contacto">
+    <h3>¿Trabajamos juntos?</h3>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:sembrandoambiente@gmail.com">sembrandoambiente@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/sembrando.ambiente" target="_blank">@sembrando.ambiente</a></p>
+    </div>
+    <p style="font-size: 0.8rem; margin-top: 2rem; opacity: 0.7;">&copy; 2026 Sembrando Ambiente - Equipo Interdisciplinario</p>
+</footer>
+
+</body>
+</html>
